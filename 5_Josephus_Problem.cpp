@@ -13,6 +13,7 @@ int main()
     cout << "Enter the no. of people and the value of k: ";
     int n, k;
     cin >> n >> k;
-    cout << "The person remaining at the end is: " << josephus(n, k) << endl;
+    cout << "The person remaining at the end is in 0-Based indexing is: " << josephus(n, k) << endl
+         << "and 1-Based indexing is: " << josephus(n, k) + 1 << endl;
     return 0;
 }
