@@ -90,7 +90,7 @@ bool check_validity(int board[9][9], int row, int col)
                 continue;
             if (board[row][col] == board[row][j])
             {
-                cout << "Same in col for board[" << row << "][" << col << "]: " << board[row][col] << "with board[" << row << "][" << j << "]" << endl;
+                cout << "Same in col for board[" << row << "][" << col << "]: " << board[row][col] << " with board[" << row << "][" << j << "]" << endl;
                 return false;
             }
         }
@@ -104,7 +104,7 @@ bool check_validity(int board[9][9], int row, int col)
                 continue;
             if (board[row][col] == board[i][col])
             {
-                cout << "Same in row for board[" << row << "][" << col << "]: " << board[row][col] << "with board[" << i << "][" << col << "]" << endl;
+                cout << "Same in row for board[" << row << "][" << col << "]: " << board[row][col] << " with board[" << i << "][" << col << "]" << endl;
                 return false;
             }
         }
