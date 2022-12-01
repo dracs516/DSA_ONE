@@ -1,6 +1,12 @@
 {
   "files.associations": {
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "__bit_reference": "cpp",
+    "__mutex_base": "cpp",
+    "string": "cpp",
+    "tuple": "cpp",
+    "variant": "cpp",
+    "iosfwd": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }
