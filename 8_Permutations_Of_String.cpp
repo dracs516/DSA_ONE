@@ -20,8 +20,10 @@ void permutaion(string str, int l, int r)
 
 int main()
 {
-    string str = "abc";
+    string str;
+    cout << "Enter the string: ";
+    getline(cin, str);
     cout << "The permutations are: " << endl;
-    permutaion(str, 0, 2);
+    permutaion(str, 0, str.length() - 1);
     return 0;
 }
