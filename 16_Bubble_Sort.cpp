@@ -17,6 +17,25 @@ void swap(int *a, int *b)
     *b = temp;
 }
 
+// in some iteration if no swapping occurs i.e. array already sorted but loop is still running then it takes more time. to solve that we do some changes to check if swapping has occured or not:
+void bubbleSortOptimized(int arr[], int n)
+{
+    bool swapped = false;
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = 0; j < n - 1 - i; j++)
+        {
+            if (arr[j] > arr[j + 1])
+            {
+                swap(&arr[j], &arr[j + 1]);
+                swapped = true;
+            }
+        }
+        if (!swapped)
+            break;
+    }
+}
+
 void bubbleSort(int arr[], int n)
 {
     for (int i = 0; i < n - 1; i++)
