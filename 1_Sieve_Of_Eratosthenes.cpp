@@ -3,9 +3,9 @@ using namespace std;
 
 void sieve_of_eratosthenes(int n, bool primeCheck[])
 {
-    for (int i = 2; i * i <= n; i++)
+    for (int i = 2; i * i <= n; i++) // i < sqrrt(n) is enough too
     {
-        for (int j = 2 * i; j <= n; j += i)
+        for (int j = 2 * i; j <= n; j += i) // j += i will make it jump from 2 to 4 to 6 to 8.....or from 3 to 6 to 9 ....basically the multiples
         {
             primeCheck[j] = false;
         }
@@ -19,7 +19,7 @@ int main()
     cin >> n;
     bool primeCheck[n + 1];
     memset(primeCheck, true, sizeof(primeCheck));
-  
+
     primeCheck[0] = false;
     primeCheck[1] = false;
 
